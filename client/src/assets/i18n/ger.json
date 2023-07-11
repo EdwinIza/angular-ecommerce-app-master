@@ -1,0 +1,10 @@
+{
+    "home": {
+        "language": "Sprache",
+        "spanish": "Spanisch",
+        "english": "Englisch",
+        "german": "Alemannisch",
+        "input_placeholder": "Hier Text einfügen",
+        "introduced_text": "Eingeführter Text ist: {{ text }}"
+    }
+}
