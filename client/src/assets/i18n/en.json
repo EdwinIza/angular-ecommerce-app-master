@@ -1,10 +1,50 @@
 {
     "home": {
-        "language": "Language",
-        "spanish": "Spanish",
-        "english": "English",
-        "german": "German",
-        "input_placeholder": "Introduce text here",
-        "introduced_text": "Introduced text is: {{ text }}"
-    }
-}
+      "language": "Language",
+      "spanish": "Spanish",
+      "english": "English",
+      "german": "German",
+      "french": "French",
+      "quechua": "Quechua",
+      "mandarin": "Mandarin Chinese",
+      "input_placeholder": "Enter the text here",
+      "introduced_text": "The introduced text is: {{ text }}"
+    },
+    "categories": {
+      "name": "Categories",
+      "laptops": "Laptops",
+      "accessories": "Accessories",
+      "cameras": "Cameras"
+    },
+    "cat": "Categories",
+    "new_products": "New Products",
+    "show_more": "Show more",
+    "loading": "Loading",
+    "digital_store": "Digital Store",
+    "empty_car": "Your cart is empty.",
+    "items_selected": "Item(s) selected",
+    "total_cart": "Total",
+    "view_cart": "View cart",
+    "Checkout": "Checkout",
+    "home_header": "Home",
+    "cart_header":"Cart",
+    "profile_header":"Profile",
+    "order_history":"Order History",
+    "sign_in":"Sign in",
+    "sign_up":"Sign up",
+    "sign_out":"Sign out",
+    "Out_of_stock": "Out of stock",
+    "Add_to_cart": "Add to cart",
+    "Cart": "Cart",
+    "Total_amount": "Total amount",
+    "Total_items": "Total items",
+    "Back_to_shopping": "Back to shopping",
+    "Sign_In_to": "Sign In to Digital Store",
+    "Email_address": "Email address",
+    "placeholder_loging": "Enter yout email address",
+    "Password": "Password",
+    "placeholder_password":"Enter your password",
+    "new_account": "Create a new account",
+    "forgot_password": "Forgot password?"
+  }
+  

@@ -3,6 +3,7 @@ import { HostListener } from '@angular/core';
 import { AuthService } from '../services/auth.service';
 import { CartService } from '../services/cart.service';
 import { TokenStorageService } from '../services/token-storage.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -17,6 +18,8 @@ export class HeaderComponent implements OnInit {
   isLoggedIn = false;
   dropdownVisible = false;
   cartData: any;
+  selectedLanguage: string;
+
 
   @HostListener('window:resize', ['$event'])
   getScreenSize(event?) {
@@ -30,7 +33,8 @@ export class HeaderComponent implements OnInit {
   constructor(
     private _token: TokenStorageService,
     private _auth: AuthService,
-    private _cart: CartService
+    private _cart: CartService,
+    private translate: TranslateService
   ) {
     this.getScreenSize();
     this._auth.user.subscribe((user) => {
@@ -62,5 +66,15 @@ export class HeaderComponent implements OnInit {
   logout() {
     this._auth.logout();
     this.isMenuOpen = false;
+  }
+
+
+  changeLanguage(): void {
+    this.translate.use(this.selectedLanguage);
+    console.log('Idioma cambiado a', this.selectedLanguage);
+  }
+
+  translateCategory(category: string): string {
+    return this.translate.instant(category);
   }
 }

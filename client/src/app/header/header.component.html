@@ -16,7 +16,23 @@
     </button>
   </div>
   <div class="header-container__middle">
-    <h3 routerLink="/">Digital Store</h3>
+    <h3 routerLink="/">{{ 'digital_store' | translate }}</h3>
+  </div>
+  <div class="container pt-5">
+    <div class="row">
+      <div class="col-4 offset-4 text-center">
+        <!-- Select -->
+        <select class="form-select" [(ngModel)]="selectedLanguage" (change)="changeLanguage()">
+          <option value="es">{{ 'home.spanish' | translate }}</option>
+          <option value="en">{{ 'home.english' | translate }}</option>
+          <option value="ger">{{ 'home.german' | translate }}</option>
+          <option value="fra">{{ 'home.french' | translate }}</option>
+          <option value="que">{{ 'home.quechua' | translate }}</option>
+          <option value="chi">{{ 'home.mandarin' | translate }}</option>
+        </select>
+        <!-- /Select -->
+      </div>
+    </div>
   </div>
   <div class="header-container__right">
     <ng-container>
@@ -45,7 +61,7 @@
             class="cart-dropdown__empty"
             *ngIf="cartData.products.length === 0"
           >
-            Your cart is empty.
+            {{'empty_car' | translate }}
           </div>
           <div
             class="cart-dropdown__content"
@@ -82,10 +98,10 @@
             </div>
             <div class="cart-info">
               <div class="selected-amount">
-                {{ cartData.products.length }} Item(s) selected
+                {{ cartData.products.length }} {{'items_selected' | translate }}
               </div>
               <div class="total-price">
-                Total: {{ cartData.total | currency: "USD" }}
+                {{'total_cart' | translate }}: {{ cartData.total | currency: "USD" }}
               </div>
             </div>
             <div class="cart-cta">
@@ -100,7 +116,7 @@
                   borderBottom: 'none'
                 }"
               >
-                View cart
+               {{'view_cart' | translate }}
               </button>
               <button
                 nz-button
@@ -114,7 +130,7 @@
                   borderBottom: 'none'
                 }"
               >
-                Checkout
+                {{'Checkout' | translate }}
               </button>
             </div>
           </div>
@@ -142,14 +158,14 @@
 <div [className]="isMenuOpen ? 'side-menu show' : 'side-menu'">
   <i nz-icon nzType="close" nzTheme="outline" (click)="toggleMenu()"></i>
   <div class="side-menu__content">
-    <h2 routerLink="/" (click)="toggleMenu()">Eccom</h2>
+    <h2 routerLink="/" (click)="toggleMenu()">{{ 'digital_store' | translate }}</h2>
     <nav>
       <ul>
-        <li routerLink="/" (click)="toggleMenu()">Home</li>
-        <li routerLink="/cart" (click)="toggleMenu()">Cart</li>
-        <li routerLink="/profile" (click)="toggleMenu()">Profile</li>
+        <li routerLink="/" (click)="toggleMenu()">{{ 'home_header' | translate }}</li>
+        <li routerLink="/cart" (click)="toggleMenu()">{{ 'cart_header' | translate }}</li>
+        <li routerLink="/profile" (click)="toggleMenu()">{{ 'profile_header' | translate }}</li>
         <li routerLink="/order-history" (click)="toggleMenu()">
-          Order History
+          {{ 'order_history' | translate }}
         </li>
       </ul>
     </nav>
@@ -160,7 +176,7 @@
         (click)="toggleMenu()"
         *ngIf="!isLoggedIn"
       >
-        Sign in
+        {{ 'sign_in' | translate }}
       </button>
       <button
         nz-button
@@ -168,10 +184,10 @@
         (click)="toggleMenu()"
         *ngIf="!isLoggedIn"
       >
-        Sign up
+        {{ 'sign_up' | translate }}
       </button>
       <button nz-button (click)="logout() && toggleMenu()" *ngIf="isLoggedIn">
-        Sign out
+        {{ 'sign_out' | translate }}
       </button>
     </div>
   </div>

@@ -1,6 +1,6 @@
 <div class="login-container">
   <div class="form-container">
-    <h2>Sign In to Eccom</h2>
+    <h2>{{'Sign_In_to' | translate }}</h2>
     <nz-alert
       *ngIf="error"
       nzShowIcon
@@ -10,22 +10,22 @@
     ></nz-alert>
     <form (ngSubmit)="onSubmit()">
       <div class="input-container">
-        <label for="email">Email address</label>
+        <label for="email">{{'Email_address' | translate }}</label>
         <input
           nz-input
           type="email"
           name="email"
-          placeholder="Enter email address"
+          placeholder="{{'placeholder_loging' | translate }}"
           [(ngModel)]="email"
         />
       </div>
       <div class="input-container">
-        <label for="password">Password</label>
+        <label for="password">{{'Password' | translate }}</label>
         <input
           nz-input
           type="password"
           name="password"
-          placeholder="Enter your password"
+          placeholder="{{'placeholder_password' | translate }}"
           [(ngModel)]="password"
         />
       </div>
@@ -36,13 +36,13 @@
           [disabled]="!canSubmit()"
           [nzLoading]="loading"
         >
-          Sign in
+          {{'sign_in' | translate }}
         </button>
-        <div><a routerLink="/register">Create a new account</a></div>
+        <div><a routerLink="/register">{{'new_account' | translate }}</a></div>
       </div>
 
       <div class="forgot-password">
-        <a href="">Forgot password?</a>
+        <a href="">{{'forgot_password' | translate }}</a>
       </div>
     </form>
   </div>

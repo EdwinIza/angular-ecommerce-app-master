@@ -1,9 +1,4 @@
-import {
-  Component,
-  OnInit,
-  ViewEncapsulation,
-  HostListener,
-} from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { CartService } from '../services/cart.service';
 import { ProductService } from '../services/product.service';
 import { Products, Product } from '../shared/models/product.model';
@@ -32,6 +27,7 @@ export class HomeComponent implements OnInit {
   loading = false;
   productPageCounter = 1;
   additionalLoading = false;
+  selectedLanguage: string;
 
   constructor(
     private productService: ProductService,
@@ -42,15 +38,7 @@ export class HomeComponent implements OnInit {
   public screenWidth: any;
   public screenHeight: any;
 
-  @HostListener('window:resize', ['$event'])
-  onResize(event) {
-    this.screenWidth = window.innerWidth;
-    this.screenHeight = window.innerHeight;
-  }
-
   ngOnInit(): void {
-    this.screenWidth = window.innerWidth;
-    this.screenHeight = window.innerHeight;
     this.loading = true;
     setTimeout(() => {
       this.productService.getAllProducts(9, this.productPageCounter).subscribe(
@@ -85,20 +73,12 @@ export class HomeComponent implements OnInit {
     }, 500);
   }
 
-  // Se cambia el idioma a Español
-  changeLanguageToSpanish(): void {
-    this.translate.use('es');
-    console.log('Idioma cambiado al Español');
-  }
-  // Se cambia el idioma a Inglés
-  changeLanguageToEnglish(): void {
-    this.translate.use('en');
-    console.log('Idioma cambiado al Inglés');
+  changeLanguage(): void {
+    this.translate.use(this.selectedLanguage);
+    console.log('Idioma cambiado a', this.selectedLanguage);
   }
 
-    // Se cambia el idioma a Inglés
-    changeLanguageToGerman(): void {
-      this.translate.use('ger');
-      console.log('Idioma cambiado al Aleman');
-    }
+  translateCategory(category: string): string {
+    return this.translate.instant(category);
+  }
 }
