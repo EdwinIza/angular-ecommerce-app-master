@@ -7,14 +7,14 @@
     "french": "Français",
     "quechua": "Quechua",
     "mandarin": "Chinois mandarin",
-    "input_placeholder": "Entrez le texte ici",
-    "introduced_text": "Le texte introduit est : {{ text }}"
+    "input_placeholder": "Saisissez le texte ici",
+    "introduced_text": "Le texte saisi est : {{ text }}"
   },
   "categories": {
     "name": "Catégories",
     "laptops": "Ordinateurs portables",
     "accessories": "Accessoires",
-    "cameras": "Appareils photo"
+    "cameras": "Caméras"
   },
   "cat": "Catégories",
   "new_products": "Nouveaux produits",
@@ -25,7 +25,7 @@
   "items_selected": "Article(s) sélectionné(s)",
   "total_cart": "Total",
   "view_cart": "Voir le panier",
-  "Checkout": "Finaliser l'achat",
+  "Checkout": "Paiement",
   "home_header": "Accueil",
   "cart_header": "Panier",
   "profile_header": "Profil",
@@ -38,12 +38,21 @@
   "Cart": "Panier",
   "Total_amount": "Montant total",
   "Total_items": "Total des articles",
-  "Back_to_shopping": "Retourner aux achats",
-  "Sign_In_to": "Connectez-vous à la boutique numérique",
+  "Back_to_shopping": "Retour aux achats",
+  "Sign_In_to": "Se connecter à la boutique numérique",
   "Email_address": "Adresse e-mail",
   "placeholder_loging": "Entrez votre adresse e-mail",
   "Password": "Mot de passe",
   "placeholder_password": "Entrez votre mot de passe",
   "new_account": "Créer un nouveau compte",
-  "forgot_password": "Mot de passe oublié ?"
+  "forgot_password": "Mot de passe oublié ?",
+  "Sign_Up_to": "S'inscrire à la boutique numérique",
+  "Full_name": "Nom complet",
+  "Enter_Full_name": "Entrez votre nom complet",
+  "Confirm_password": "Confirmez le mot de passe",
+  "strong_password": "Entrez un mot de passe sécurisé",
+  "repeat_password": "Répétez votre mot de passe",
+  "agree_politics": "J'accepte de recevoir des e-mails d'information et promotionnels",
+  "agree_privacy": "J'accepte les conditions d'utilisation et la politique de confidentialité d'Boutique numérique",
+  "existing_user": "Se connecter avec un utilisateur existant"
 }

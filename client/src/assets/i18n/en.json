@@ -41,10 +41,24 @@
     "Back_to_shopping": "Back to shopping",
     "Sign_In_to": "Sign In to Digital Store",
     "Email_address": "Email address",
-    "placeholder_loging": "Enter yout email address",
+    "placeholder_loging": "Enter your email address",
     "Password": "Password",
     "placeholder_password":"Enter your password",
     "new_account": "Create a new account",
-    "forgot_password": "Forgot password?"
+    "forgot_password": "Forgot password?",
+    "Sign_Up_to":"Sign Up to Digital Store",
+    "Full_name":"Full name",
+    "Enter_Full_name": "Enter your full name",
+    "Confirm_password": "Confirm password",
+    "strong_password": "Enter a strong password",
+    "repeat_password": "Repeat your password",
+    "agree_politics": "I agree to receive instructional and promotional emails",
+    "agree_privacy": " I agree to Digital Store's Terms of Use & Privacy Policy",
+    "existing_user": "Sign in with an existing user"
   }
+
+
+
+
+
   

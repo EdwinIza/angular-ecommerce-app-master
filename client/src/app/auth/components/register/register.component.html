@@ -1,6 +1,6 @@
 <div class="register-container">
   <div class="form-container">
-    <h2>Sign Up to Eccom</h2>
+    <h2>{{'Sign_Up_to' | translate }}</h2>
     <nz-alert
       *ngIf="errorMessage"
       nzShowIcon
@@ -10,55 +10,55 @@
     ></nz-alert>
     <form #registerForm="ngForm" (ngSubmit)="onSubmit()">
       <div class="input-container">
-        <label for="fullName">Full name</label>
+        <label for="fullName">{{'Full_name' | translate }}</label>
         <input
           nz-input
           type="text"
           name="fullName"
           [(ngModel)]="fullName"
-          placeholder="Enter your full name"
+          placeholder="{{'Enter_Full_name' | translate }}"
         />
       </div>
       <div class="input-container">
-        <label for="email">Email address</label>
+        <label for="email">{{'Email_address' | translate }}</label>
         <input
           nz-input
           type="email"
           name="email"
           [(ngModel)]="email"
-          placeholder="Enter your email address"
+          placeholder="{{'placeholder_loging' | translate }}"
         />
       </div>
       <div class="🤪">
         <div class="input-container">
-          <label for="password">Password</label>
+          <label for="password">{{'Password' | translate }}</label>
           <input
             nz-input
             type="password"
             name="password"
             [(ngModel)]="password"
-            placeholder="Enter a strong password"
+            placeholder="{{'strong_password' | translate }}"
           />
         </div>
         <div class="input-container">
-          <label for="confirmPassword">Confirm password</label>
+          <label for="confirmPassword">{{'Confirm_password' | translate }}</label>
           <input
             nz-input
             type="password"
             name="confirmPassword"
             [(ngModel)]="confirmPassword"
-            placeholder="Repeat your password"
+            placeholder="{{'repeat_password' | translate }}"
           />
         </div>
       </div>
       <div class="✅">
         <div class="checkbox-container">
           <input nz-input type="checkbox" />
-          <span>I agree to receive instructional and promotional emails</span>
+          <span>{{'agree_politics' | translate }}</span>
         </div>
         <div class="checkbox-container">
           <input nz-input type="checkbox" />
-          <span> I agree to Eccom's Terms of Use & Privacy Policy</span>
+          <span>{{'agree_privacy' | translate }}</span>
         </div>
       </div>
       <div class="cta-container">
@@ -69,10 +69,10 @@
           [disabled]="!canSubmit()"
           [nzLoading]="loading"
         >
-          Sign up
+          {{'sign_up' | translate }}
         </button>
         <div>
-          <div><a routerLink="/login">Sign in with an existing user</a></div>
+          <div><a routerLink="/login">{{'existing_user' | translate }}</a></div>
         </div>
       </div>
     </form>

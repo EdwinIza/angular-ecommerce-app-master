@@ -41,9 +41,18 @@
   "Back_to_shopping": "Volver a comprar",
   "Sign_In_to": "Inicia sesión en Tienda Digital",
   "Email_address": "Correo electrónico",
-  "placeholder_loging": "Ingresa tu correo electrónico",
+  "placeholder_loging": "Ingresa tu dirección de correo electrónico",
   "Password": "Contraseña",
   "placeholder_password": "Ingresa tu contraseña",
   "new_account": "Crear una cuenta nueva",
-  "forgot_password": "¿Olvidaste tu contraseña?"
+  "forgot_password": "¿Olvidaste tu contraseña?",
+  "Sign_Up_to": "Regístrate en Tienda Digital",
+  "Full_name": "Nombre completo",
+  "Enter_Full_name": "Ingresa tu nombre completo",
+  "Confirm_password": "Confirmar contraseña",
+  "strong_password": "Ingresa una contraseña segura",
+  "repeat_password": "Repite tu contraseña",
+  "agree_politics": "Acepto recibir correos electrónicos informativos y promocionales",
+  "agree_privacy": "Acepto los Términos de Uso y la Política de Privacidad de Tienda Digital",
+  "existing_user": "Iniciar sesión con un usuario existente"
 }
