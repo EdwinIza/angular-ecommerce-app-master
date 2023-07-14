@@ -54,5 +54,57 @@
   "repeat_password": "Répétez votre mot de passe",
   "agree_politics": "J'accepte de recevoir des e-mails d'information et promotionnels",
   "agree_privacy": "J'accepte les conditions d'utilisation et la politique de confidentialité d'Boutique numérique",
-  "existing_user": "Se connecter avec un utilisateur existant"
+  "existing_user": "Se connecter avec un utilisateur existant",
+  "cart_notification": {
+    "product_added": "Produit ajouté au panier",
+    "added_success": "L'article sélectionné a été ajouté avec succès au panier",
+    "removed_success": "L'article sélectionné a été supprimé avec succès du panier",
+    "product_removed": "Produit supprimé du panier"
+  },
+  "Update_password": "Mettre à jour",
+  "user_profile": {
+    "full_name": "Nom complet",
+    "email_address": "Adresse e-mail",
+    "password": "Mot de passe",
+    "confirm_password": "Confirmer le mot de passe"
+  },
+  "Billing_address": "Adresse de facturation",
+  "Payment_details": "Détails du paiement",
+  "Card_number": "Numéro de carte",
+  "Name_on_card": "Nom sur la carte",
+  "Expiry_date": "Date d'expiration",
+  "Security_code": "Code de sécurité",
+  "Order_summary": "Récapitulatif de la commande",
+  "Items_order": "Article(s)",
+  "Payment_method": "Méthode de paiement",
+  "Credit": "Carte de crédit",
+  "Order_total": "Total de la commande",
+  "Place_order": "Passer commande",
+  "Order_items": "Articles de la commande",
+  "Thank_you": "Merci !",
+  "check_email_confirmation": "Veuillez vérifier votre courrier électronique pour la confirmation de la commande",
+  "Order_ID": "ID de commande :",
+  "Continue_shopping": "Continuer vos achats",
+  "Continue": "Continuer",
+  "billing_address_ch": {
+    "Full name": "Nom complet",
+    "Enter your full name": "Entrez votre nom complet",
+    "Email": "E-mail",
+    "Enter your email address": "Entrez votre adresse e-mail",
+    "Address": "Adresse",
+    "Enter your address": "Entrez votre adresse",
+    "City": "Ville",
+    "Enter your city": "Entrez votre ville",
+    "Country": "Pays",
+    "Enter your country": "Entrez votre pays",
+    "ZIP": "Code postal",
+    "Enter your zip code": "Entrez votre code postal",
+    "Telephone": "Téléphone",
+    "Enter your telephone number": "Entrez votre numéro de téléphone"
+  },
+  "Order_history": "Historique des commandes",
+  "Name_history": "Nom",
+  "Quantity_history": "Quantité",
+  "OrderID_history": "ID de commande"
+  
 }

@@ -54,5 +54,57 @@
   "repeat_password": "Repite tu contraseña",
   "agree_politics": "Acepto recibir correos electrónicos informativos y promocionales",
   "agree_privacy": "Acepto los Términos de Uso y la Política de Privacidad de Tienda Digital",
-  "existing_user": "Iniciar sesión con un usuario existente"
+  "existing_user": "Iniciar sesión con un usuario existente",
+  "cart_notification": {
+    "product_added": "Producto agregado al carrito",
+    "added_success": "El artículo seleccionado se agregó correctamente al carrito",
+    "removed_success": "El artículo seleccionado se eliminó correctamente del carrito",
+    "product_removed":"Producto eliminado del carrito"
+  },
+  "Update_password": "Actualizar",
+  "user_profile": {
+    "full_name": "Nombre completo",
+    "email_address": "Dirección de correo electrónico",
+    "password": "Contraseña",
+    "confirm_password": "Confirmar contraseña"
+  },
+  "Billing_address": "Dirección de facturación",
+  "Payment_details": "Detalles de pago",
+  "Card_number": "Número de tarjeta",
+  "Name_on_card": "Nombre en la tarjeta",
+  "Expiry_date": "Fecha de vencimiento",
+  "Security_code": "Código de seguridad",
+  "Order_summary": "Resumen del pedido",
+  "Items_order": "Producto(s)",
+  "Payment_method": "Método de pago",
+  "Credit": "Tarjeta de crédito",
+  "Order_total": "Total del pedido",
+  "Place_order": "Realizar pedido",
+  "Order_items": "Productos del pedido",
+  "Thank_you": "¡Gracias!",
+  "check_email_confirmation": "Por favor, verifica tu correo electrónico para la confirmación del pedido",
+  "Order_ID": "ID del pedido:",
+  "Continue_shopping": "Continuar comprando",
+  "Continue": "Continuar",
+  "billing_address_ch": {
+    "Full name": "Nombre completo",
+    "Enter your full name": "Ingresa tu nombre completo",
+    "Email": "Correo electrónico",
+    "Enter your email address": "Ingresa tu dirección de correo electrónico",
+    "Address": "Dirección",
+    "Enter your address": "Ingresa tu dirección",
+    "City": "Ciudad",
+    "Enter your city": "Ingresa tu ciudad",
+    "Country": "País",
+    "Enter your country": "Ingresa tu país",
+    "ZIP": "Código postal",
+    "Enter your zip code": "Ingresa tu código postal",
+    "Telephone": "Teléfono",
+    "Enter your telephone number": "Ingresa tu número de teléfono"
+  },
+  "Order_history": "Historial de pedidos",
+  "Name_history": "Nombre",
+  "Quantity_history": "Cantidad",
+  "OrderID_history": "ID de pedido"
+  
 }

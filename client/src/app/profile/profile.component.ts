@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ApiService } from '../services/api.service';
 import { TokenStorageService } from '../services/token-storage.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-profile',
@@ -12,25 +13,25 @@ export class ProfileComponent implements OnInit {
   user = [
     {
       key: 'fullName',
-      label: 'Full name',
+      label: '',
       value: '',
       type: 'text',
     },
     {
       key: 'email',
-      label: 'Email address',
+      label: '',
       value: '',
       type: 'email',
     },
     {
       key: 'password',
-      label: 'Password',
+      label: '',
       value: '',
       type: 'password',
     },
     {
       key: 'confirmPassword',
-      label: 'Confirm password',
+      label: '',
       value: '',
       type: 'password',
     },
@@ -44,7 +45,8 @@ export class ProfileComponent implements OnInit {
   constructor(
     private _api: ApiService,
     private _token: TokenStorageService,
-    private _router: Router
+    private _router: Router,
+    private translate: TranslateService
   ) {}
 
   // Update user fields with current details
@@ -53,13 +55,28 @@ export class ProfileComponent implements OnInit {
     this.userId = user_id;
     this.user[0].value = fname;
     this.user[1].value = email;
-    console.log(this.user);
-  }
 
+      // Cargar las traducciones iniciales
+  this.translate.get('user_profile').subscribe((translations: any) => {
+    this.user[0].label = translations.full_name;
+    this.user[1].label = translations.email_address;
+    this.user[2].label = translations.password;
+    this.user[3].label = translations.confirm_password;
+  });
+  
+    // Suscribirse al evento de cambio de idioma
+    this.translate.onLangChange.subscribe(() => {
+      this.translate.get('user_profile').subscribe((translations: any) => {
+        this.user[0].label = translations.full_name;
+        this.user[1].label = translations.email_address;
+        this.user[2].label = translations.password;
+        this.user[3].label = translations.confirm_password;
+      });
+    });
+  }
+  
   canUpdate(): boolean {
-    return this.user.filter((field) => field.value.length > 0).length !== 4
-      ? true
-      : false;
+    return this.user.filter((field) => field.value.length > 0).length !== 4;
   }
 
   // Submit data to be updated

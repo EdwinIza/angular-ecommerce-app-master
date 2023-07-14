@@ -10,7 +10,7 @@
   <!-- FIRST STEP -->
   <div *ngIf="currentStep === 1">
     <div class="billing-container">
-      <h2>Billing Address</h2>
+      <h2>{{ 'Billing_address' | translate }}</h2>
       <form>
         <div
           class="input-container"
@@ -32,17 +32,17 @@
         (click)="submitBilling()"
         [disabled]="canBillingSubmit()"
       >
-        Continue
+      {{ 'Continue' | translate }}
       </button>
     </div>
   </div>
   <!-- SECOND STEP -->
   <div *ngIf="currentStep === 2">
     <div class="payment-container">
-      <h2>Payment Details</h2>
+      <h2>{{ 'Payment_details' | translate }}</h2>
       <form>
         <div class="input-container">
-          <label for="">Card number</label>
+          <label for="">{{ 'Card_number' | translate }}</label>
           <input
             nz-input
             type="text"
@@ -53,7 +53,7 @@
           />
         </div>
         <div class="input-container">
-          <label for="">Name on card</label>
+          <label for="">{{ 'Name_on_card' | translate }}</label>
           <input
             nz-input
             type="text"
@@ -65,7 +65,7 @@
         </div>
         <div class="‼️">
           <div class="input-container">
-            <label for="">Expiry date</label>
+            <label for="">{{ 'Expiry_date' | translate }}</label>
             <input
               nz-input
               type="text"
@@ -76,7 +76,7 @@
             />
           </div>
           <div class="input-container">
-            <label for="">Security code</label>
+            <label for="">{{ 'Security_code' | translate }}</label>
             <input
               nz-input
               type="text"
@@ -93,7 +93,7 @@
         [disabled]="!canPaymentSubmit()"
         (click)="submitPayment()"
       >
-        Continue
+        {{ 'Continue' | translate }}
       </button>
     </div>
   </div>
@@ -101,12 +101,12 @@
   <div *ngIf="currentStep === 3">
     <div class="summary-container">
       <div class="summary-container__order">
-        <h2>Order Summary</h2>
+        <h2>{{ 'Order_summary' | translate }}</h2>
         <div class="details">
-          <div><span>Item(s)</span> {{ cartData.products.length }}</div>
-          <div><span>Payment method</span> Credit</div>
+          <div><span>{{ 'Items_order' | translate }}</span> {{ cartData.products.length }}</div>
+          <div><span>{{ 'Payment_method' | translate }}</span> {{ 'Credit' | translate }}</div>
           <div>
-            <span>Order total</span> {{ cartData.total | currency: "USD" }}
+            <span>{{ 'Order_total' | translate }}</span> {{ cartData.total | currency: "USD" }}
           </div>
         </div>
         <button
@@ -115,11 +115,11 @@
           (click)="submitCheckout()"
           [nzLoading]="loading"
         >
-          Place order
+         {{ 'Place_order' | translate }}
         </button>
       </div>
       <div class="summary-container__items">
-        <h2>Order Items</h2>
+        <h2>{{ 'Order_items' | translate }}</h2>
         <div class="item-list">
           <div class="item-container" *ngFor="let item of cartData.products">
             <div class="item-image">
@@ -142,18 +142,18 @@
     <div class="confirmation-container">
       <header>
         <div class="title">
-          <h1>Thank you!</h1>
-          <p>Please check your email for the order confirmation</p>
+          <h1>{{ 'Thank_you' | translate }}</h1>
+          <p>{{ 'check_email_confirmation' | translate }}</p>
         </div>
         <div class="order-id">
-          Order ID: <span>{{ orderId }}</span>
+          {{ 'Order_ID' | translate }} <span>{{ orderId }}</span>
         </div>
       </header>
       <button nz-button class="cta-button" routerLink="/">
-        Continue shopping
+        {{ 'Continue_shopping' | translate }}
       </button>
       <div class="products-container">
-        <h2>Order Summary</h2>
+        <h2>{{ 'Order_summary' | translate }}</h2>
         <div class="products-container__list">
           <div class="list-item" *ngFor="let item of products">
             <div class="item-image">

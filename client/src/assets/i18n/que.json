@@ -54,5 +54,57 @@
   "repeat_password": "Sipasqa qillqaywanmi churay",
   "agree_politics": "Yachaywasiykuwanmi tukuy e-chaskisqa ruraymanta tiyay",
   "agree_privacy": "Tienda Digital ñanmi Usumantaqmi Tiyaykuwanmi tukuy",
-  "existing_user": "Musuq qullanpaqaqa rurasqankuwanmi kanku"
+  "existing_user": "Musuq qullanpaqaqa rurasqankuwanmi kanku",
+  "cart_notification": {
+    "product_added": "Quchkanku karrituman añamushan",
+    "added_success": "Ñuqa yanapaqmiña karrituman yanapanmiña yanapaqmiña ñanpi qillqan",
+    "removed_success": "Ñuqa yanapaqmiña karrituman ñanpi qillqanmiña ñanpi qillqan",
+    "product_removed": "Quchkan karritupaq ñanpi qillqa"
+  },
+  "Update_password": "Rikuchiy",
+  "user_profile": {
+    "full_name": "Yupa runa ñawi",
+    "email_address": "Yupa runa chaski ñawi",
+    "password": "Ñawpaq",
+    "confirm_password": "Ñawpaq ñisqay"
+    },
+    "Billing_address": "Sut'inchana qillqa",
+    "Payment_details": "Ñuqa kamayuqkunata",
+    "Card_number": "Tarkikuna",
+    "Name_on_card": "Ñawpaq tarpuy",
+    "Expiry_date": "Saqerpan ripuy",
+    "Security_code": "Hatun ayniyuq",
+    "Order_summary": "Qillqanpi uñachiy",
+    "Items_order": "Producto(s)",
+    "Payment_method": "Ñuqa kuyuchina rikuchiy",
+    "Credit": "Tarkikuna",
+    "Order_total": "Sumaq qillqa",
+    "Place_order": "Qillqayku",
+    "Order_items": "Qillqanpi uñachiykuna",
+    "Thank_you": "Sumaqkuyki!",
+    "check_email_confirmation": "Kanqa imasunaykita qillqanpiyki kachkanña",
+    "Order_ID": "Qillqanpi ID:",
+    "Continue_shopping": "Yaqhay wasiynin",
+    "Continue": "Yaqha",
+    "billing_address_ch": {
+      "Full name": "Ñawi sut'iq",
+      "Enter your full name": "Ñawi sut'iqmi kani",
+      "Email": "Ñuqa imayna qillqa",
+      "Enter your email address": "Ñuqa imayna qillqa kani",
+      "Address": "Sut'i",
+      "Enter your address": "Sut'i mi kani",
+      "City": "Llaqta",
+      "Enter your city": "Llaqta mi kani",
+      "Country": "Llaqtayuq",
+      "Enter your country": "Llaqtayuqmi kani",
+      "ZIP": "ZIP",
+      "Enter your zip code": "ZIP mi kani",
+      "Telephone": "Tirpu",
+      "Enter your telephone number": "Tirpu mi kani"
+    },
+    "Order_history": "Pedido p'unchaw",
+    "Name_history": "Sutikuna",
+    "Quantity_history": "Chanin",
+    "OrderID_history": "ID de pedido nisqa"
+  
 }

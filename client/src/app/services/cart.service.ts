@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { NzNotificationService } from 'ng-zorro-antd/notification';
 import { ApiService } from './api.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Injectable({
   providedIn: 'root',
@@ -15,6 +16,7 @@ export class CartService {
   cartDataObs$ = new BehaviorSubject(this.cartData);
 
   constructor(
+    private translate: TranslateService,
     private _notification: NzNotificationService,
     private _api: ApiService
   ) {
@@ -32,6 +34,8 @@ export class CartService {
   }
 
   addProduct(params): void {
+    const translatedMessage = this.translate.instant('cart_notification.product_added');
+    const translatedRemovedSuccess = this.translate.instant('cart_notification.added_success');
     const { id, price, quantity, image, title, maxQuantity } = params;
     const product = { id, price, quantity, image, title, maxQuantity };
 
@@ -64,8 +68,8 @@ export class CartService {
     this.cartData.total = this.getCartTotal();
     this._notification.create(
       'success',
-      'Product added to cart',
-      `${title} was successfully added to the cart`
+      translatedMessage,
+      `${title} ${translatedRemovedSuccess}`
     );
     this.cartDataObs$.next({ ...this.cartData });
     localStorage.setItem('cart', JSON.stringify(this.cartData));
@@ -89,6 +93,8 @@ export class CartService {
   }
 
   removeProduct(id: number): void {
+    const translatedMessage = this.translate.instant('cart_notification.product_removed');
+    const translatedRemovedSuccess = this.translate.instant('cart_notification.removed_success');
     let updatedProducts = this.cartData.products.filter(
       (prod) => prod.id !== id
     );
@@ -99,8 +105,8 @@ export class CartService {
 
     this._notification.create(
       'success',
-      'Removed successfully',
-      'The selected item was removed from the cart successfully'
+      translatedMessage,
+      `${translatedRemovedSuccess}`
     );
   }
 

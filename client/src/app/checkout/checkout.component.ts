@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../services/auth.service';
 import { CartService } from '../services/cart.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-checkout',
@@ -20,7 +21,7 @@ export class CheckoutComponent implements OnInit {
   successMessage = '';
   orderId;
 
-  constructor(private _auth: AuthService, private _cart: CartService) {
+  constructor(private _auth: AuthService, private _cart: CartService,private translate: TranslateService) {
     this._auth.user.subscribe((user) => {
       console.log(user); // Verificar el contenido del objeto user
       if (user) {
@@ -35,7 +36,45 @@ export class CheckoutComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+      // Cargar las traducciones para billingAddress
+  this.translate.get('billing_address_ch').subscribe((translations: any) => {
+    this.billingAddress[0].name = translations['Full name'];
+    this.billingAddress[0].placeholder = translations['Enter your full name'];
+    this.billingAddress[1].name = translations['Email'];
+    this.billingAddress[1].placeholder = translations['Enter your email address'];
+    this.billingAddress[2].name = translations['Address'];
+    this.billingAddress[2].placeholder = translations['Enter your address'];
+    this.billingAddress[3].name = translations['City'];
+    this.billingAddress[3].placeholder = translations['Enter your city'];
+    this.billingAddress[4].name = translations['Country'];
+    this.billingAddress[4].placeholder = translations['Enter your country'];
+    this.billingAddress[5].name = translations['ZIP'];
+    this.billingAddress[5].placeholder = translations['Enter your zip code'];
+    this.billingAddress[6].name = translations['Telephone'];
+    this.billingAddress[6].placeholder = translations['Enter your telephone number'];
+  });
+
+   // Suscribirse al evento de cambio de idioma
+   this.translate.onLangChange.subscribe(() => {
+    this.translate.get('billing_address_ch').subscribe((translations: any) => {
+      this.billingAddress[0].name = translations['Full name'];
+      this.billingAddress[0].placeholder = translations['Enter your full name'];
+      this.billingAddress[1].name = translations['Email'];
+      this.billingAddress[1].placeholder = translations['Enter your email address'];
+      this.billingAddress[2].name = translations['Address'];
+      this.billingAddress[2].placeholder = translations['Enter your address'];
+      this.billingAddress[3].name = translations['City'];
+      this.billingAddress[3].placeholder = translations['Enter your city'];
+      this.billingAddress[4].name = translations['Country'];
+      this.billingAddress[4].placeholder = translations['Enter your country'];
+      this.billingAddress[5].name = translations['ZIP'];
+      this.billingAddress[5].placeholder = translations['Enter your zip code'];
+      this.billingAddress[6].name = translations['Telephone'];
+      this.billingAddress[6].placeholder = translations['Enter your telephone number'];
+    });
+  });
+  }
 
   submitCheckout() {
     this.loading = true;

@@ -54,5 +54,57 @@
   "repeat_password": "重复输入您的密码",
   "agree_politics": "我同意接收教育和促销电子邮件",
   "agree_privacy": "我同意 数码商店 的使用条款和隐私政策",
-  "existing_user": "使用现有用户登录"
+  "existing_user": "使用现有用户登录",
+  "cart_notification": {
+    "product_added": "商品已添加到购物车",
+    "added_success": "所选商品已成功添加到购物车",
+    "removed_success": "所选商品已成功从购物车移除",
+    "product_removed": "商品已从购物车移除"
+  },
+  "Update_password": "更新",
+  "user_profile": {
+    "full_name": "全名",
+    "email_address": "电子邮件地址",
+    "password": "密码",
+    "confirm_password": "确认密码"
+  },
+  "Billing_address": "账单地址",
+  "Payment_details": "付款详情",
+  "Card_number": "卡号",
+  "Name_on_card": "持卡人姓名",
+  "Expiry_date": "有效期",
+  "Security_code": "安全码",
+  "Order_summary": "订单摘要",
+  "Items_order": "商品数量",
+  "Payment_method": "付款方式",
+  "Credit": "信用卡",
+  "Order_total": "订单总额",
+  "Place_order": "下单",
+  "Order_items": "订单商品",
+  "Thank_you": "谢谢！",
+  "check_email_confirmation": "请查看您的电子邮件以确认订单",
+  "Order_ID": "订单编号：",
+  "Continue_shopping": "继续购物",
+  "Continue": "继续",
+  "billing_address_ch": {
+    "Full name": "全名",
+    "Enter your full name": "请输入您的全名",
+    "Email": "邮箱",
+    "Enter your email address": "请输入您的邮箱地址",
+    "Address": "地址",
+    "Enter your address": "请输入您的地址",
+    "City": "城市",
+    "Enter your city": "请输入您的城市",
+    "Country": "国家",
+    "Enter your country": "请输入您的国家",
+    "ZIP": "邮编",
+    "Enter your zip code": "请输入您的邮编",
+    "Telephone": "电话",
+    "Enter your telephone number": "请输入您的电话号码"
+  },
+  "Order_history": "订单历史",
+  "Name_history": "名称",
+  "Quantity_history": "数量",
+  "OrderID_history": "订单编号"
+  
 }

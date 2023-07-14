@@ -54,5 +54,57 @@
   "repeat_password": "Wiederholen Sie Ihr Passwort",
   "agree_politics": "Ich stimme dem Erhalt von Informations- und Werbe-E-Mails zu",
   "agree_privacy": "Ich akzeptiere die Nutzungsbedingungen und Datenschutzrichtlinien von Digitaler Shop",
-  "existing_user": "Mit einem bestehenden Benutzerkonto anmelden"
+  "existing_user": "Mit einem bestehenden Benutzerkonto anmelden",
+  "cart_notification": {
+    "product_added": "Produkt zum Warenkorb hinzugefügt",
+    "added_success": "Der ausgewählte Artikel wurde erfolgreich zum Warenkorb hinzugefügt",
+    "removed_success": "Der ausgewählte Artikel wurde erfolgreich aus dem Warenkorb entfernt",
+    "product_removed": "Produkt aus dem Warenkorb entfernt"
+  },
+  "Update_password": "Aktualisieren",
+  "user_profile": {
+    "full_name": "Vollständiger Name",
+    "email_address": "E-Mail-Adresse",
+    "password": "Passwort",
+    "confirm_password": "Passwort bestätigen"
+    },
+    "Billing_address": "Rechnungsadresse",
+  "Payment_details": "Zahlungsdetails",
+  "Card_number": "Kartennummer",
+  "Name_on_card": "Name auf der Karte",
+  "Expiry_date": "Ablaufdatum",
+  "Security_code": "Sicherheitscode",
+  "Order_summary": "Bestellübersicht",
+  "Items_order": "Artikel",
+  "Payment_method": "Zahlungsmethode",
+  "Credit": "Kredit",
+  "Order_total": "Gesamtbestellwert",
+  "Place_order": "Bestellung aufgeben",
+  "Order_items": "Bestellte Artikel",
+  "Thank_you": "Vielen Dank!",
+  "check_email_confirmation": "Bitte überprüfen Sie Ihre E-Mail für die Bestellbestätigung",
+  "Order_ID": "Bestellnummer:",
+  "Continue_shopping": "Mit dem Einkauf fortfahren",
+  "Continue": "Weiter",
+  "billing_address_ch": {
+    "Full name": "Vollständiger Name",
+    "Enter your full name": "Geben Sie Ihren vollständigen Namen ein",
+    "Email": "E-Mail",
+    "Enter your email address": "Geben Sie Ihre E-Mail-Adresse ein",
+    "Address": "Adresse",
+    "Enter your address": "Geben Sie Ihre Adresse ein",
+    "City": "Stadt",
+    "Enter your city": "Geben Sie Ihre Stadt ein",
+    "Country": "Land",
+    "Enter your country": "Geben Sie Ihr Land ein",
+    "ZIP": "Postleitzahl",
+    "Enter your zip code": "Geben Sie Ihre Postleitzahl ein",
+    "Telephone": "Telefon",
+    "Enter your telephone number": "Geben Sie Ihre Telefonnummer ein"
+  },
+  "Order_history": "Bestellverlauf",
+  "Name_history": "Name",
+  "Quantity_history": "Menge",
+  "OrderID_history": "Bestell-ID"
+  
 }

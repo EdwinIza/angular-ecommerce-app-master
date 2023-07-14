@@ -1,12 +1,12 @@
 <div class="order-history-container">
-  <h2>Order History</h2>
+  <h2>{{ 'Order_history' | translate }}</h2>
   {{ error }}
   <nz-table #basicTable [nzData]="orders" *ngIf="orders.length > 0">
     <thead>
       <tr>
-        <th>Name</th>
-        <th>Quantity</th>
-        <th>OrderID</th>
+        <th>{{ 'Name_history' | translate }}</th>
+        <th>{{ 'Quantity_history' | translate }}</th>
+        <th>{{ 'OrderID_history' | translate }}</th>
       </tr>
     </thead>
     <tbody>

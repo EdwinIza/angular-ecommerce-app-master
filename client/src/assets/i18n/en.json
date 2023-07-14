@@ -54,7 +54,59 @@
     "repeat_password": "Repeat your password",
     "agree_politics": "I agree to receive instructional and promotional emails",
     "agree_privacy": " I agree to Digital Store's Terms of Use & Privacy Policy",
-    "existing_user": "Sign in with an existing user"
+    "existing_user": "Sign in with an existing user",
+    "cart_notification": {
+      "product_added": "Product added to cart",
+      "added_success": "The selected item was successfully added to cart",
+      "removed_success": "The selected item was successfully removed from the cart",
+      "product_removed":"Product removed from cart"
+    },
+    "Update_password": "Update",
+    "user_profile": {
+      "full_name": "Full Name",
+      "email_address": "Email Address",
+      "password": "Password",
+      "confirm_password": "Confirm Password"
+      },
+      "Billing_address":"Billing Address",
+      "Payment_details": "Payment Details",
+      "Card_number": "Card number",
+      "Name_on_card": "Name on card",
+      "Expiry_date": "Expiry date",
+      "Security_code": "Security code",
+      "Order_summary": "Order Summary",
+      "Items_order": "Item(s)",
+      "Payment_method": "Payment method",
+      "Credit": "Credit",
+      "Order_total": "Order total",
+      "Place_order": "Place order",
+      "Order_items": "Order Items",
+      "Thank_you": "Thank you!",
+      "check_email_confirmation":"Please check your email for the order confirmation",
+      "Order_ID": "Order ID:",
+      "Continue_shopping": "Continue shopping",
+      "Continue": "Continue",
+      "billing_address_ch": {
+        "Full name": "Full name",
+        "Enter your full name": "Enter your full name",
+        "Email": "Email",
+        "Enter your email address": "Enter your email address",
+        "Address": "Address",
+        "Enter your address": "Enter your address",
+        "City": "City",
+        "Enter your city": "Enter your city",
+        "Country": "Country",
+        "Enter your country": "Enter your country",
+        "ZIP": "ZIP",
+        "Enter your zip code": "Enter your zip code",
+        "Telephone": "Telephone",
+        "Enter your telephone number": "Enter your telephone number"
+      },
+      "Order_history": "Order History",
+      "Name_history": "Name",
+      "Quantity_history": "Quantity",
+      "OrderID_history": "OrderID"
+      
   }
 
 
