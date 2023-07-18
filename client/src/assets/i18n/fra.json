@@ -10,13 +10,12 @@
     "input_placeholder": "Saisissez le texte ici",
     "introduced_text": "Le texte saisi est : {{ text }}"
   },
-  "categories": {
-    "name": "Catégories",
-    "laptops": "Ordinateurs portables",
-    "accessories": "Accessoires",
-    "cameras": "Caméras"
-  },
   "cat": "Catégories",
+  "Laptops": "Ordinateurs portables",
+  "Accesories": "Accessoires",
+  "Cameras": "Caméras",
+  "Consoles": "Consoles",
+  "Shoes": "Chaussures",
   "new_products": "Nouveaux produits",
   "show_more": "Afficher plus",
   "loading": "Chargement",

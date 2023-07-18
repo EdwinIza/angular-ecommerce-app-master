@@ -10,13 +10,12 @@
     "input_placeholder": "Churaykitaqa rimanakuywan",
     "introduced_text": "Churaykitaq rimanakuykunawan: {{ text }}"
   },
-  "categories": {
-    "name": "Rimanakuykuna",
-    "laptops": "Laptops",
-    "accessories": "Accesorios",
-    "cameras": "Kamaras"
-  },
   "cat": "Rimanakuykuna",
+  "Laptops": "Laptumpaq",
+  "Accesories": "Accesorios",
+  "Cameras": "Camaras",
+  "Consoles": "Consoles",
+  "Shoes": "Zapatos",
   "new_products": "Musuq Qawayay",
   "show_more": "Rikuchiy",
   "loading": "Llant'a",

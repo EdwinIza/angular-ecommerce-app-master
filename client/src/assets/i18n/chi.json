@@ -10,13 +10,12 @@
     "input_placeholder": "在此输入文本",
     "introduced_text": "输入的文本是：{{ text }}"
   },
-  "categories": {
-    "name": "分类",
-    "laptops": "笔记本电脑",
-    "accessories": "配件",
-    "cameras": "相机"
-  },
   "cat": "分类",
+  "Laptops": "笔记本电脑",
+  "Accesories": "配件",
+  "Cameras": "相机",
+  "Consoles": "游戏机",
+  "Shoes": "鞋子",
   "new_products": "新产品",
   "show_more": "显示更多",
   "loading": "加载中",

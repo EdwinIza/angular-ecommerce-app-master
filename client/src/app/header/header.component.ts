@@ -49,6 +49,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
     if (this._token.getUser()) this.isLoggedIn = true;
     else this.isLoggedIn = false;
+    this.selectedLanguage = 'default'; // Establecer valor predeterminado
   }
 
   toggleMenu() {

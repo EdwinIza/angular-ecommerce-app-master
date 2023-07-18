@@ -226,3 +226,20 @@
   background-color: rgba(0, 0, 0, 0.5);
   pointer-events: auto;
 }
+
+select {
+  width: 150px;
+  padding: 2px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+option[disabled]:first-of-type {
+  color: #888;
+}
+
+select option:first-of-type img {
+  width: 20px; /* Ajusta el ancho de la imagen según sea necesario */
+  height: 20px; /* Ajusta la altura de la imagen según sea necesario */
+}

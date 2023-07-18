@@ -10,13 +10,12 @@
       "input_placeholder": "Enter the text here",
       "introduced_text": "The introduced text is: {{ text }}"
     },
-    "categories": {
-      "name": "Categories",
-      "laptops": "Laptops",
-      "accessories": "Accessories",
-      "cameras": "Cameras"
-    },
     "cat": "Categories",
+    "Laptops": "Laptops",
+    "Accesories": "Accessories",
+    "Cameras": "Cameras",
+    "Consoles": "Consoles",
+    "Shoes": "Shoes",
     "new_products": "New Products",
     "show_more": "Show more",
     "loading": "Loading",

@@ -10,13 +10,12 @@
     "input_placeholder": "Text hier eingeben",
     "introduced_text": "Der eingegebene Text lautet: {{ text }}"
   },
-  "categories": {
-    "name": "Kategorien",
-    "laptops": "Laptops",
-    "accessories": "Zubehör",
-    "cameras": "Kameras"
-  },
   "cat": "Kategorien",
+  "Laptops": "Laptops",
+  "Accesories": "Zubehör",
+  "Cameras": "Kameras",
+  "Consoles": "Konsolen",
+  "Shoes": "Schuhe",
   "new_products": "Neue Produkte",
   "show_more": "Mehr anzeigen",
   "loading": "Laden",

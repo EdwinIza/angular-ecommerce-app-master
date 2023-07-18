@@ -3,15 +3,31 @@
     <div class="categories__header">
       <h2>{{ 'cat' | translate }}</h2>
     </div>
-    <div class="categories__list">
+    <!-- <div class="categories__list">
       <swiper [zoom]="false" [slidesPerView]="screenWidth > 1200 ? 3 : 1" [spaceBetween]="50" [pagination]="true"
         [loop]="true">
         <ng-template swiperSlide *ngFor="let c of categories">
           <div class="category-card">{{ translateCategory(c.name) }}</div>
         </ng-template>
       </swiper>
+    </div> -->
+    <div class="categories_listaupdt">
+      <div class="categories_container_updt">
+        {{ 'Laptops' | translate }}
+      </div>
+      <div class="categories_container_updt">
+        {{ 'Accesories' | translate }}
+      </div>
+      <div class="categories_container_updt">
+        {{ 'Cameras' | translate }}
+      </div>
+      <div class="categories_container_updt">
+        {{ 'Consoles' | translate }}
+      </div>
+      <div class="categories_container_updt">
+        {{ 'Shoes' | translate }}
+      </div>
     </div>
-
   </div>
   <div class="products">
     <div class="products__header">
